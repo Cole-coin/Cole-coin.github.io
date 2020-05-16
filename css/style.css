@@ -69,7 +69,7 @@
     color: #FEFFFF;
   }
 
-  label{
+  .label-toggle{
     margin: 0 20px 0 0;
     font-size: 26px;
     line-height: 70px;
@@ -184,7 +184,6 @@
     width: 100%;
     min-height: 50px;
     position: relative;
-    z-index: 1;
   }
 
   .divider:before{
@@ -316,7 +315,6 @@
   .boxy:nth-child(2){
     width: 60%;
     min-height: 600px;
-    display: relative;
     align-items: center;
   }
 
@@ -675,7 +673,7 @@
   }
 
   @media only screen and (max-width: 600px){
-    label{
+    .label-toggle{
       display: block;
       cursor: pointer;
     }
