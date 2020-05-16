@@ -123,15 +123,32 @@
     cursor: pointer;
     position: relative;
     z-index: 998;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+    animation: textChangeColor 8s linear infinite;
   }
 
   .photo b{
     width: 60%;
     text-align: center;
     letter-spacing: 1.5px;
-    color: #D7DADE;
+    color: #ffff80;
     position: relative;
     z-index: 998;
+    font-size: 25px;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+    animation: textChangeColor 8s linear infinite;
+  }
+
+  @keyframes textChangeColor {
+    0% {
+      color:#e6ffff;
+    }
+    50% {
+      color: #e6ffff;
+    }
+    100% {
+      color: #e6ffff;
+    }
   }
 
   .content{
@@ -229,18 +246,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -10px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 999;
   }
 
   .inner-text{
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     padding: 20px;
-    width: 300px;
+    width: 26%;
     margin: 10px 0 10px 0;
     transition: all 450ms ease;
   }
@@ -265,16 +282,19 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1.2px;
+    font-size: x-large;
   }
 
   .inner-text h5{
     color: #6D85A8;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    font-size: medium;
   }
 
   .inner-text p{
     color: #6D85A8;
+    font-size: large;
   }
 
   .inner-content{
@@ -357,12 +377,12 @@
   ul li h4{
     color: #B8C8CD;
     font-weight: 200;
-    font-size: 45px;
+    font-size: xx-large;
     margin-bottom: 0px;
   }
 
   ul li p{
-    font-size: 20px;
+    font-size: x-large;
     width: 80%;
     margin: 0 auto;
     color: #6D85A8;
@@ -675,6 +695,7 @@
   @media screen and (max-width: 500px){
     #slider{margin-left: -55px;}
     .photo-text h4{font-size: 45px;}
+    .photo-text b{font-size: 20px;}
     .inner-text{width: 80%;}
     
   }
