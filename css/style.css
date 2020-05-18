@@ -346,7 +346,7 @@
     margin-top: -20px;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: 1078px) {
       #telegram{
         overflow: hidden;
         margin-left: -20px;
@@ -663,16 +663,22 @@
   }
 
   @media screen and (max-width: 950px){
-    .photo p{width: 90%;}
     .grand-title{width: 90%;}
+    .photo p{width: 90%;}
     .text{flex-direction: column;}
     .inner-content{flex-flow: column wrap;}
+    .inner-text{width: 80%}
     .boxy:nth-child(1),.boxy:nth-child(2){width: 90%;}/*GENERA PROBLEMA*/
     .boxy:nth-child(1){padding: 10px;}
     #slider{margin-left: -55px;}
   }
 
-  @media only screen and (max-width: 600px){
+  @media screen and (max-width: 1078px){
+    .inner-content{flex-flow: column wrap;}
+
+  }
+
+  @media only screen and (max-width: 500px){
     .label-toggle{
       display: block;
       cursor: pointer;
